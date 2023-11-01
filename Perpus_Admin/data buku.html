@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/databuku.css" />
+    <title>Entry Data Buku | Perpustakaan UHW Perbanas</title>
+    <link rel="icon" href="Gambar/logo.png">
+    <script src="transaction.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="homepage.html"><img src="Gambar/image (26) (1).png" alt="image" height="50"
+                    width="115"></a></div>
+        <ul>
+            <li><a href="homepage.html"><i class="fa-solid fa-caret-left"></i>Kembali</a></li>
+        </ul>
+    </header>
+    <form>
+        <h2>Input Data Buku</h2>
+        <label for="kategoribk">Kategori</label>
+        <select id="Kategoribk" name="Kategoribk" required>
+            <option value="kyu">Karya Umum</option>
+            <option value="bhs">Bahasa</option>
+            <option value="ils">Ilmu Sosial</option>
+            <option value="fls">Filsafat</option>
+        </select>
+        <label for="nama">Judul</label>
+        <input type="text" id="judul" name="judul" required>
+
+        <label for="jk">Penulis</label>
+        <input type="text" id="penulis" name="penulis" required>
+
+        <label for="alamat">Penerbit</label>
+        <input type="text" id="penerbit" name="penerbit" required>
+
+        <label for="alamat">Tahun Terbit</label>
+        <input type="text" id="thntbt" name="thntbt" required>
+
+        <label for="alamat">Sipnosis</label>
+        <textarea id="sinopsis" name="sinopsis"></textarea><br>
+
+        <input type="submit" value="Simpan">
+    </form>
+    <footer>
+        <marquee>Perpustakaan Universitas Hayam Wuruk Perbanas Surabaya | Jam Operasional Pukul 09.00 WIB sampai 16.00
+            WIB</marquee>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="css/stylehome.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<head>
+    <title> Perpustakaan UHW Perbanas </title>
+    <link rel="icon" href="Gambar/logo.png">
+</head>
+
+<body>
+    <header>
+        <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 60px; font-weight: bold;">Perpustakaan UHW
+            Perbanas</h1>
+        <h4 style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: medium;"> Jl. Wonorejo Utara
+            No.16, Wonorejo, Kec. Rungkut, Surabaya, Jawa Timur 60296 </h4>
+    </header>
+    <div class="font">
+        <p class="hai">Hai Admin!</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <p class="entry">Entry Data Dan Transaksi</p>
+            <li><a href="data anggota.html">Data Anggota</a></li>
+            <li><a href="data buku.html">Data Buku</a></li>
+            <li><a href="peminjaman.html">Entry Peminjaman</a></li>
+            <p class="laporan">Laporan</p>
+            <li><a href="lapdataanggota.html">Lap Data Anggota</a></li>
+            <li><a href="lapdatabuku.html">Lap Data Buku</a></li>
+            <li><a href="lappeminjamanbuku.html">Lap Peminjaman Buku</a></li>
+            <li><a href="login.html" style="color: #085caf;">Logout</a></li>
+        </ul>
+    </nav>
+    <article>
+        <br>
+        <center>
+            <h4 class="h4">
+                <marquee>SELAMAT DATANG DI SISTEM INFORMASI PERPUSTAKAAN UNIVERSITAS HAYAM WURUK PERBANAS</marquee>
+            </h4>
+        </center>
+        <br>
+        <div class="container-fluid">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>NIM</th>
+                        <th>Nama</th>
+                        <th>Kategori Buku</th>
+                        <th>Judul Buku</th>
+                        <th>Tanggal Pinjam</th>
+                        <th>Tanggal Kembali</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1015</td>
+                        <td>Nouval Lazuardy</td>
+                        <td>Karya Umum</td>
+                        <td>Sistem Operasi</td>
+                        <td>04 Oktober 2023</td>
+                        <td>10 Oktober 2023</td>
+                        <td style="color: rgb(3, 210, 3);">Ditrima</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1002</td>
+                        <td>Ari Ferdinand</td>
+                        <td>Karya Umum</td>
+                        <td>Algoritma Pemrograman</td>
+                        <td>06 Oktober 2023</td>
+                        <td>12 Oktober 2023</td>
+                        <td style="color: rgb(255, 0, 0);">Ditolak</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>1011</td>
+                        <td>Muhammad Abdullah</td>
+                        <td>Karya Umum</td>
+                        <td>Manajemen Sains</td>
+                        <td>06 Oktober 2023</td>
+                        <td>12 Oktober 2023</td>
+                        <td style="color: rgb(3, 210, 3);">Ditolak</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a id="showPopup" class="btn btn-primary" style="margin-left: 505px;">
+                <p style="font-size: 13px; text-align: center; margin-top: 1px; margin-bottom: 1px;">Edit</p>
+            </a>
+            <a href="#" class="btn btn-danger" style="margin-left: 5px;">
+                <p style="font-size: 13px; text-align: center; margin-top: 1px; margin-bottom: 1px;">Delete</p>
+            </a>
+            <div class="popup" id="popup">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>NIM</th>
+                            <th>Nama</th>
+                            <th>Kategori Buku</th>
+                            <th>Judul Buku</th>
+                            <th>Tanggal Pinjam</th>
+                            <th>Tanggal Kembali</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>1015</td>
+                            <td>Nouval Lazuardy</td>
+                            <td contenteditable="true">Karya Umum</td>
+                            <td contenteditable="true">Sistem Operasi</td>
+                            <td>04 Oktober 2023</td>
+                            <td>10 Oktober 2023</td>
+                            <td contenteditable="true" style="color: rgb(3, 210, 3);">Ditrima</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>1002</td>
+                            <td>Ari Ferdinand</td>
+                            <td contenteditable="true">Karya Umum</td>
+                            <td contenteditable="true">Algoritma Pemrograman</td>
+                            <td>06 Oktober 2023</td>
+                            <td>12 Oktober 2023</td>
+                            <td contenteditable="true" style="color: rgb(255, 0, 0);">Ditolak</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>1011</td>
+                            <td>Muhammad Abdullah</td>
+                            <td contenteditable="true">Karya Umum</td>
+                            <td contenteditable="true">Manajemen Sains</td>
+                            <td>06 Oktober 2023</td>
+                            <td>12 Oktober 2023</td>
+                            <td contenteditable="true" style="color: rgb(3, 210, 3);">Diterima</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>1011</td>
+                            <td>Muhammad Abdullah</td>
+                            <td contenteditable="true">Karya Umum</td>
+                            <td contenteditable="true">Manajemen Sains</td>
+                            <td>06 Oktober 2023</td>
+                            <td>12 Oktober 2023</td>
+                            <td contenteditable="true" style="color: rgb(3, 210, 3);">Diterima</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>1011</td>
+                            <td>Muhammad Abdullah</td>
+                            <td contenteditable="true">Karya Umum</td>
+                            <td contenteditable="true">Manajemen Sains</td>
+                            <td>06 Oktober 2023</td>
+                            <td>12 Oktober 2023</td>
+                            <td contenteditable="true" style="color: rgb(3, 210, 3);">Diterima</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>1011</td>
+                            <td>Muhammad Abdullah</td>
+                            <td contenteditable="true">Karya Umum</td>
+                            <td contenteditable="true">Manajemen Sains</td>
+                            <td>06 Oktober 2023</td>
+                            <td>12 Oktober 2023</td>
+                            <td contenteditable="true" style="color: rgb(3, 210, 3);">Diterima</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button id="closePopup">Simpan</button>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script>
+                const showPopupButton = document.getElementById("showPopup");
+                const closePopupButton = document.getElementById("closePopup");
+                const popup = document.getElementById("popup");
+
+                showPopupButton.addEventListener("click", function () {
+                    popup.style.display = "block";
+                });
+
+                closePopupButton.addEventListener("click", function () {
+                    popup.style.display = "none";
+                });
+
+                window.onclick = function (event) {
+                    if (event.target == popup) {
+                        popup.style.display = "none";
+                    }
+                }
+            </script>
+    </article>
+    <footer>
+        <h6>Perpustakaan UHW Perbanas. All Rights Reserved.</h6>
+    </footer>
+</body>
+
+</html>

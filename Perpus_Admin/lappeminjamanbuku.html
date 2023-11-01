@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Peminjaman Buku | Perpustakaan UWH Perbans</title>
+    <link rel="stylesheet" href="css/lappeminjaman.css" />
+    <link rel="icon" href="Gambar/logo.png">
+
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="homepage.html"><img src="Gambar/image (26) (1).png" alt="image" height="50" width="115" ></a></div>
+        <h1>Laporan Peminjaman Buku</h1>
+        <ul>
+            <li><a href="homepage.html" style="color: white;"><i class="fa-solid fa-caret-left" ></i>Kembali</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <!-- <div class="print-button" onclick="window.print()">Cetak</div> -->
+        <div class="dropdown">
+            <label for="rentang-waktu">Pilih Rentang Waktu:</label>
+            <select id="rentang-waktu">
+                <option value="harian">Harian</option>
+                <option value="mingguan">Mingguan</option>
+                <option value="bulanan">Bulanan</option>
+                <option value="tahunan">Tahunan</option>
+            </select>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama Peminjam</th>
+                    <th>Judul Buku</th>
+                    <th>Tanggal Pinjam</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#">Nouval Lazuardy</a></td>
+                    <td><a href="#">Buku 1</a></td>
+                    <td>2022-05-10</td>
+                </tr>
+                <tr>
+                    <td><a href="#">Ari Ferdinand</a></td>
+                    <td><a href="#">Buku 2</a></td>
+                    <td>2022-05-15</td>
+                </tr>
+                <!-- Tambahkan lebih banyak data peminjaman sesuai kebutuhan -->
+            </tbody>
+        </table>
+        <div class="print-button">
+            <button onclick="window.print()">Cetak Laporan</button>
+        </div>
+    </div>
+    <footer>
+        <marquee>Perpustakaan Universitas Hayam Wuruk Perbanas Surabaya | Jam Operasional Pukul 09.00 WIB sampai 16.00 WIB</marquee>
+    </footer>
+</body>
+</html>

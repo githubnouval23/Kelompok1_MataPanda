@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Gambar/book-bg.jpg); 
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 180px;
+    padding: 10px ;
+    background-color: #085caf;
+    color: white;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.container {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #085caf;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.print-button {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.print-button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.print-button button:hover {
+    background-color: #0056b3;
+}
+
+.dropdown {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.dropdown select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+@media print {
+    .print-button, .dropdown {
+        display: none;
+    }
+}
+
+ul {
+    margin: 15px;
+    margin-top: 20px;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none; 
+    text-align: right; 
+}
+
+li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.logo {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
