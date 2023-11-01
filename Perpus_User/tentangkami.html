@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="css/tentangkami.css">
+    <link rel="icon" href="Gambar/logo.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="Gambar/image (26) (1).png" alt="image" height="50" width="115" ></div>
+        <h1>Tentang Kami</h1>
+        <ul>
+            <li style="display: inline; margin-right: 15px;"><a href="homepage.html"><i class="fa-solid fa-caret-left" ></i>Kembali</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <h2>Perpustakaan UHW Perbanas</h2>
+        <p class="animate-on-scroll">Perpustakaan UHW Perbanas merupakan perpustakaan terlengkap.</p>
+        <p class="animate-on-scroll">Perpustakaan UHW Perbanas telah berdiri sejak 27 September 2023.</p>
+    </div>
+    <div class="container">
+        <h2>Tujuan Perpustakaan UHW Perbanas Surabaya:</h2>
+        <ol>
+        <li class="animate-on-scroll">Memenuhi kebutuhan informasi bidang bisnis dan perbankan dalam bentuk analog dan digital yang menunjang kegiatan Tri Dharma Perguruan Tinggi dan pemangku kepentingan.</li>
+        <li class="animate-on-scroll">Memberikan layanan kepada pengguna secara langsung dan e-library services kepada sivitas akademika dan semua pemangku kepentingan.</li>
+        </ol>
+    </div>
+    <div class="container">
+        <h2>Visi Perpustakaan UHW Perbanas:</h2>
+        <p class="animate-on-scroll">Menjadi perpustakaan yang unggul dalam penyediaan informasi bidang bisnis dan perbankan Nasional dan Internasional dengan standar pelayanan modern berbasis teknologi informasi.</p>
+    </div>
+    <div class="container">
+        <h2>Misi Perpustakaan UHW Perbanas:</h2>
+        <ol>
+        <li class="animate-on-scroll">Menyediakan informasi dalam bidang bisnis dan perbankan pendukung Tri Dharma Perguruan Tinggi yang dapat meningkatkan kualitas kegiatan proses belajar mengajar, penelitian dan pengabdian masyarakat dalam bentuk layanan Perpustakaan.</li>
+        <li class="animate-on-scroll">Mengembangkan koleksi sebagai sumber informasi yang berorientasi kepada kebutuhan pengguna.</li>
+        <li class="animate-on-scroll">Mengadakan kerjasama dengan Perpustakaan atau institusi lain sebagai sharing resources informasi.</li>
+        <li class="animate-on-scroll">Menyebarluaskan informasi up to date tanpa batas dengan dukungan teknologi informasi.</li>
+        <li class="animate-on-scroll">Memberikan kemudahan akses informasi dalam semua layanan Perpustakaan dengan memanfaatkan teknologi informasi dengan meningkatkan kualitas penelusuran informasi.</li>
+        <li class="animate-on-scroll">Menciptakan suasana yang ramah dan bersahabat untuk mendukung suasana akademik yang kondusif bagi penyelenggaraan pendidikan.</li>
+        </ol>
+    </div>
+    <div class="container">
+        <h2>Tim Pengembang:</h2>
+        <p class="animate-on-scroll">
+            <img src="Gambar/tim.png" alt="image" width="500">
+        </p>
+    </div>
+    <div class="container">
+        <h2>Perpustakaan UHW Perbanas</h2>
+        <p class="animate-on-scroll">
+            <video controls>
+            <source src="Video/PerpustakaanUHWPerbanas2023.mp4" type="video/mp4"/>
+            </video>
+        </p>
+    </div>
+    
+    <script>
+        // Fungsi untuk mengecek apakah elemen dalam viewport
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        // Fungsi untuk memeriksa elemen saat menggulir
+        function checkElementsOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            elements.forEach((element) => {
+                if (isElementInViewport(element)) {
+                    element.classList.add('scroll-animation');
+                }
+            });
+        }
+
+        // Panggil fungsi saat halaman dimuat dan saat menggulir
+        window.addEventListener('load', checkElementsOnScroll);
+        window.addEventListener('scroll', checkElementsOnScroll);
+    </script>
+    <footer>
+        <marquee>Perpustakaan Universitas Hayam Wuruk Perbanas Surabaya | Jam Operasional Pukul 09.00 WIB sampai 16.00 WIB</marquee>
+    </footer>
+</body>
+</html>

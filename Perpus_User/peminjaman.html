@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylepeminjaman.css" />
+    <title>Peminjaman Buku | Perpustakaan UHW Perbanas</title>
+    <link rel="icon" href="Gambar/logo.png">
+    <script src="transaction.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="Gambar/image (26) (1).png" alt="image" height="50" width="115"></a></div>
+        <ul>
+            <li><a href="homepage.html"><i class="fa-solid fa-caret-left"></i>Kembali</a></li>
+        </ul>
+    </header>
+    <form>
+        <h2>Formulir Peminjaman Buku</h2>
+        <label for="nama">Nim</label>
+        <input type="text" id="nim" name="nim" required>
+
+        <label for="nama">Nama Peminjam</label>
+        <input type="text" id="nama" name="nama" required>
+
+        <label for="kategoribk">Kategori Buku:</label>
+        <select id="kategoribk" name="kategoribk" required>
+            <option value="Karya Umum">Karya Umum</option>
+            <option value="Bahasa">Bahasa</option>
+            <option value="Ilmu Sosial">Ilmu Sosial</option>
+            <option value="Filsafat">Filsafat</option>
+        </select>
+
+        <label for="judulbk">Judul Buku:</label>
+        <select id="judulbk" name="judulbk" required>
+            <option value="Pengantar Sistem Informasi">Pengantar Sistem Informasi</option>
+            <option value="Sistem Operasi">Sistem Operasi</option>
+            <option value="Interaksi Manusia dan Komputer">Interaksi Manusia dan Komputer</option>
+            <option value="Algoritma Pemrograman">Algoritma Pemrograman</option>
+        </select>
+        <label for="tanggal-pinjam">Tanggal Pinjam</label>
+        <input type="date" id="tanggal-pinjam" name="tanggal-pinjam" required>
+
+        <label for="tanggal-kembali">Tanggal Kembali</label>
+        <input type="date" id="tanggal-kembali" name="tanggal-kembali" required>
+        <button type="button"><a style="color: white;" href="rincian.html">Submit</a></button>
+    </form>
+    <footer>
+        <marquee>Perpustakaan Universitas Hayam Wuruk Perbanas Surabaya | Jam Operasional Pukul 09.00 WIB sampai 16.00
+            WIB</marquee>
+    </footer>
+</body>
+
+</html>
